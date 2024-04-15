@@ -10,6 +10,7 @@ nav a{
   border-radius: 30px;
   padding: 5px;
 }
+
 #inicio img{
   height:400px;
 }
@@ -185,6 +186,17 @@ p{
   text-decoration: none;
 }
 
+#experiencia img,#formacion img {
+    -webkit-filter: grayscale(100%);
+    /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+#experiencia img:hover, #formacion img:hover {
+    -webkit-filter: grayscale(100%);
+    /* Safari 6.0 - 9.0 */
+    filter: grayscale(0%);
+}
+
 #proyectos footer, #proyectos footer a, #proyectos .fa-linkedin-in,
 #sobre-mi footer, #sobre-mi footer a, #sobre-mi .fa-linkedin-in{
   color:#E20000;
@@ -237,5 +249,8 @@ footer .fa-whatsapp {
   }
   footer .fa-whatsapp {
     right:40px;
+}
+  .inicio{
+  margin-top:15px;
 }
 }
