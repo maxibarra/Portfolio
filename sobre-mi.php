@@ -1,3 +1,8 @@
+<?php
+
+$pg = "sobre-mi";
+
+?>
 <!DOCTYPE html>
 <html lang="es" class="h-100">
 
@@ -9,42 +14,13 @@
   <link rel="stylesheet" href="css/fontawesome/css/fontawesome.min.css">
   <link rel="stylesheet" href="css/bootstrap/css/bootstrap.min.css">
   <script src="css/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <link rel="icon"  href="images/favicon.ico">
+  <link rel="icon" href="images/favicon.ico">
   <link rel="stylesheet" href="css/estilos.css">
 </head>
 
 <body id="sobre-mi" class="d-flex flex-column h-100">
   <header class="container">
-    <nav class="navbar navbar-expand-lg mb-4">
-      <div class="container-fluid">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
-          aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Inicio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active px-4" href="sobre-mi.html">Sobre Mi</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="proyectos.html">Proyectos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contacto.html">Contacto</a>
-            </li>
-          </ul>
-          <ul class="navbar-nav">
-            <li class="float-sm-end">
-              <a class="btn btn-rojo" href="contacto.html">Descargar Mi CV <i class="fa-solid fa-download"></i></a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    </nav>
+    <?php include_once("menu.php"); ?>
   </header>
   <main>
     <section id="bio" class="container">
@@ -52,7 +28,7 @@
         <div class="col-12 col-sm-7">
           <h1 class="col-12 py-5">Sobre Mi</h1>
           <p>Mi nombre es Maxi. Soy desarrollador web Frontend,sigo aprendiendo para desarrollarme como fullstack dev.
-             Buscando experiencia en el area de la tecnologia. </p>
+            Buscando experiencia en el area de la tecnologia. </p>
           <a href="contacto.html" class="btn btn-rojo my-5 d-none d-sm-block w-25">Enviar Mensaje</a>
         </div>
         <div class="col-10 col-sm-3 py-5 pe-5 d-none d-sm-block">
@@ -62,7 +38,7 @@
           <img src="images/perfil-ejem.avif" alt="Maxi" class="img-fluid">
         </div>
         <div class="col-6 d-sm-block d-sm-none py-3">
-          <a href="contacto.html" class="btn btn-rojo my-5 d-sm-block d-sm-none">Enviar Mensaje</a>
+          <a href="contacto.php" class="btn btn-rojo my-5 d-sm-block d-sm-none">Enviar Mensaje</a>
         </div>
 
       </div>
@@ -171,7 +147,7 @@
           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque officia magni, maiores veritatis inventore
             eligendi laborum numquam tempore aliquam non.</p>
         </div>
-         <div class="col-sm-2 d-none d-sm-block p-5">
+        <div class="col-sm-2 d-none d-sm-block p-5">
           <img src="images/sin-logo.png" alt="Logo de Empresa" class="img-fluid">
         </div>
         <div class="col-sm-10 col-12 my-3">
@@ -181,7 +157,7 @@
           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque officia magni, maiores veritatis inventore
             eligendi laborum numquam tempore aliquam non.</p>
         </div>
-         <div class="col-sm-2 d-none d-sm-block p-5">
+        <div class="col-sm-2 d-none d-sm-block p-5">
           <img src="images/sin-logo.png" alt="Logo de Empresa" class="img-fluid">
         </div>
         <div class="col-sm-10 col-12 my-3">
@@ -232,11 +208,11 @@
               <h3>Desarrollo Web Full Stack</h3>
               <h4>DePc Suite</h4>
               <h5>2024</h5>
-              
+
             </div>
           </div>
         </div>
-         <div class="col-12 col-sm-6">
+        <div class="col-12 col-sm-6">
           <div class="row">
             <div class="col-2 py-3 my-auto d-none d-sm-block">
               <img src="images/coder.jpg" alt="coder" class="img-fluid">
@@ -248,7 +224,7 @@
             </div>
           </div>
         </div>
-         <div class="col-12 col-sm-6">
+        <div class="col-12 col-sm-6">
           <div class="row">
             <div class="col-2 py-3 my-auto d-none d-sm-block">
               <img src="images/coder.jpg" alt="coderHouseJs" class="img-fluid">
@@ -260,7 +236,7 @@
             </div>
           </div>
         </div>
-         <div class="col-12 col-sm-6">
+        <div class="col-12 col-sm-6">
           <div class="row">
             <div class="col-2 py-3 my-auto d-none d-sm-block">
               <img src="images/coder.jpg" alt="coderReact" class="img-fluid">
@@ -268,11 +244,11 @@
             <div class="col-12 col-sm-10 p-3">
               <h3>React Js</h3>
               <h4>CoderHouse</h4>
-              <h5>2021</h5>   
+              <h5>2021</h5>
             </div>
           </div>
         </div>
-         <div class="col-12 col-sm-6">
+        <div class="col-12 col-sm-6">
           <div class="row">
             <div class="col-2 py-3 my-auto d-none d-sm-block">
               <img src="images/udemy.png" alt="udemy" class="img-fluid">
@@ -280,7 +256,7 @@
             <div class="col-12 col-sm-10 p-3">
               <h3>React y TypeScript</h3>
               <h4>Udemy</h4>
-              <h5>2024</h5>   
+              <h5>2024</h5>
             </div>
           </div>
         </div>
@@ -303,7 +279,7 @@
               </div>
             </div>
           </div>
-          
+
           <div class="col-sm-6 col-12">
             <div class="row mr-sm-1 bg-white card-idioma shadow me-sm-1">
               <div class="col-4 text-center card">
@@ -326,8 +302,7 @@
     <div class="row">
       <div class="col-12 col-sm-3">
         <a href="https://github.com" target="_blank" title="Github"><i class="fab fa-github"></i></a>
-        <a href="https://www.linkedin.com/in/maximiliano-ibarra/" target="_blank" title="Github"><i
-            class="fab fa-linkedin-in"></i></a>
+        <a href="https://www.linkedin.com/in/maximiliano-ibarra/" target="_blank" title="Github"><i class="fab fa-linkedin-in"></i></a>
       </div>
       <div class="col-12 col-sm-3">
         sponsor <a href="https://depcsuite.com">DePC Suite</a>
@@ -336,8 +311,7 @@
         <a href="mailto:maxi.8379@gmail.com">maxi.8379@gmail.com</a>
       </div>
       <div class="col-12 col-sm-3">
-        <a href="https://api.whatsapp.com/send?phone=+541139476425" target="_blank" title="whatsapp"><i
-            class="fab fa-whatsapp px-3 pt-3 pb-4"></i></a>
+        <a href="https://api.whatsapp.com/send?phone=+541139476425" target="_blank" title="whatsapp"><i class="fab fa-whatsapp px-3 pt-3 pb-4"></i></a>
       </div>
 
     </div>

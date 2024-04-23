@@ -1,3 +1,9 @@
+<?php 
+
+$pg = "inicio";
+
+?>
+
 <!DOCTYPE html>
 <html lang="es" class="h-100">
 
@@ -15,41 +21,12 @@
 
 <body id="inicio" class="d-flex flex-column h-100">
   <header class="container">
-    <nav class="navbar navbar-expand-lg mb-4">
-      <div class="container-fluid">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
-          aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active px-4 inicio" href="index.html">Inicio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="sobre-mi.html">Sobre Mi</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="proyectos.html">Proyectos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contacto.html">Contacto</a>
-            </li>
-          </ul>
-          <ul class="navbar-nav">
-            <li class="float-sm-end">
-              <a class="btn btn-rojo" href="contacto.html">Descargar Mi CV <i class="fa-solid fa-download"></i></a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    </nav>
+   <?php include_once("menu.php"); ?>
   </header>
   <main class="container">
     <div class="row">
       <div class="col-12 mt-4 text-center div-cohete">
-        <a href="proyectos.html">
+        <a href="proyectos.php">
           <img src="images/cohete.svg">
         </a>
       </div>
@@ -63,7 +40,7 @@
       </div>
       <div class="row">
         <div class="col-12 text-center ">
-          <a href="proyectos.html" class="btn btn-blanco shadow">Conoce mis proyectos</a>
+          <a href="proyectos.php" class="btn btn-blanco shadow">Conoce mis proyectos</a>
         </div>
       </div>
   </main>

@@ -1,3 +1,8 @@
+<?php
+
+$pg = "proyectos";
+
+?>
 <!DOCTYPE html>
 <html lang="es" class="h-100">
 
@@ -9,42 +14,13 @@
   <link rel="stylesheet" href="css/fontawesome/css/fontawesome.min.css">
   <link rel="stylesheet" href="css/bootstrap/css/bootstrap.min.css">
   <script src="css/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <link rel="icon"  href="images/favicon.ico">
+  <link rel="icon" href="images/favicon.ico">
   <link rel="stylesheet" href="css/estilos.css">
 </head>
 
 <body id="proyectos" class="d-flex flex-column h-100">
   <header class="container">
-    <nav class="navbar navbar-expand-lg mb-4">
-      <div class="container-fluid">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
-          aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Inicio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="sobre-mi.html">Sobre Mi</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active px-4" href="proyectos.html">Proyectos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contacto.html">Contacto</a>
-            </li>
-          </ul>
-          <ul class="navbar-nav">
-            <li class="float-sm-end">
-              <a class="btn btn-rojo" href="contacto.html">Descargar Mi CV <i class="fa-solid fa-download"></i></a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    </nav>
+    <?php include_once("menu.php"); ?>
   </header>
   <main class="container">
     <div class="row">
@@ -118,8 +94,7 @@
     <div class="row">
       <div class="col-12 col-sm-3">
         <a href="https://github.com" target="_blank" title="Github"><i class="fab fa-github"></i></a>
-        <a href="https://www.linkedin.com/in/maximiliano-ibarra/" target="_blank" title="Github"><i
-            class="fab fa-linkedin-in"></i></a>
+        <a href="https://www.linkedin.com/in/maximiliano-ibarra/" target="_blank" title="Github"><i class="fab fa-linkedin-in"></i></a>
       </div>
       <div class="col-12 col-sm-3">
         sponsor <a href="https://depcsuite.com">DePC Suite</a>
@@ -128,8 +103,7 @@
         <a href="mailto:maxi.8379@gmail.com">maxi.8379@gmail.com</a>
       </div>
       <div class="col-12 col-sm-3">
-        <a href="https://api.whatsapp.com/send?phone=+541139476425" target="_blank" title="whatsapp"><i
-            class="fab fa-whatsapp px-3 pt-3 pb-4"></i></a>
+        <a href="https://api.whatsapp.com/send?phone=+541139476425" target="_blank" title="whatsapp"><i class="fab fa-whatsapp px-3 pt-3 pb-4"></i></a>
       </div>
 
     </div>
