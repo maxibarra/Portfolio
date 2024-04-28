@@ -8,30 +8,34 @@ if ($_POST) {
   $telefono = $_POST["txtTelefono"];
   $mensaje = $_POST["txtMensaje"];
 
-  //varios destinatarios
-  $para = "maxi.8379@gmail.com";
-  $titulo = "Recibiste un mensaje desde tu Web";
+  if($nombre != "" && $correo != "" && $telefono != "" && $mensaje != "") {
+    //varios destinatarios
+    $para = "maxi.8379@gmail.com";
+    $titulo = "Recibiste un mensaje desde tu Web";
 
-  //mensaje
-  $cuerpo = ";
+    //mensaje
+    $cuerpo = ";
   Nombre: $nombre <br>;
   Correo: $correo <br>;
   Telefono: $telefono <br>;
   Mensaje: $mensaje <br>;
   ";
 
-  // Para enviar un correo HTML, debe establecerse la cabecera Content-type
-  $cabeceras  = 'MIME-Version: 1.0' . "\r\n";
-  $cabeceras .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
+    // Para enviar un correo HTML, debe establecerse la cabecera Content-type
+    $cabeceras  = 'MIME-Version: 1.0' . "\r\n";
+    $cabeceras .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
 
-  //cabeceras adicionales
-  $cabeceras .= 'To: maxi.8379@gmail.com' . "\r\n";
-  //$cabeceras .= 'From: contacto@maxiibarra.com' . "\r\n";
+    //cabeceras adicionales
+    $cabeceras .= 'To: maxi.8379@gmail.com' . "\r\n";
+    //$cabeceras .= 'From: contacto@maxiibarra.com' . "\r\n";
 
-  //Enviarlo
-  //habilitar el mail si se sube a un servidor web
-  //mail($para,$titulo,$cuerpo, $cabeceras);
-  header("Location:confirmacion-envio.php");
+    //Enviarlo
+    //habilitar el mail si se sube a un servidor web
+    //mail($para,$titulo,$cuerpo, $cabeceras);
+    header("Location:confirmacion-envio.php");
+  }
+  
+  
 }
 ?>
 <!DOCTYPE html>
