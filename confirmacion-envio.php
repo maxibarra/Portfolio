@@ -1,9 +1,7 @@
 <?php
-
-$pg = "inicio";
+$pg = "contacto";
 
 ?>
-
 <!DOCTYPE html>
 <html lang="es" class="h-100">
 
@@ -19,28 +17,21 @@ $pg = "inicio";
   <link rel="stylesheet" href="css/estilos.css">
 </head>
 
-<body id="inicio" class="d-flex flex-column h-100">
+<body id="contacto" class="d-flex flex-column h-100">
   <header class="container">
     <?php include_once("menu.php"); ?>
   </header>
   <main class="container">
     <div class="row">
-      <div class="col-12 mt-4 text-center div-cohete">
-        <a href="proyectos.php">
-          <img src="images/cohete.svg">
-        </a>
+      <div class="col-12 pt-1 pb-4 pt-sm-5">
+        <h1 class="py-1">
+          Gracias por contactarte,
+        </h1>
       </div>
     </div>
     <div class="row">
-      <div class="col-12 col-sm-6 my-4 mt-sm-5 text-center mb-3 offset-sm-3">
-        <p class="py-1 shadow">
-          Bienvenid@ a mi sitio web sobre desarrollo de sistemas
-        </p>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-12 text-center">
-        <a href="proyectos.php" class="btn btn-blanco shadow">Conoce mis proyectos</a>
+      <div class="col-12 pb-5">
+        <p>Te estaré respondiendo a la brevedad.</p>
       </div>
     </div>
   </main>

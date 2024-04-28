@@ -2,6 +2,37 @@
 
 $pg = "contacto";
 
+if ($_POST) {
+  $nombre = $_POST["txtNombre"];
+  $correo = $_POST["txtCorreo"];
+  $telefono = $_POST["txtTelefono"];
+  $mensaje = $_POST["txtMensaje"];
+
+  //varios destinatarios
+  $para = "maxi.8379@gmail.com";
+  $titulo = "Recibiste un mensaje desde tu Web";
+
+  //mensaje
+  $cuerpo = ";
+  Nombre: $nombre <br>;
+  Correo: $correo <br>;
+  Telefono: $telefono <br>;
+  Mensaje: $mensaje <br>;
+  ";
+
+  // Para enviar un correo HTML, debe establecerse la cabecera Content-type
+  $cabeceras  = 'MIME-Version: 1.0' . "\r\n";
+  $cabeceras .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
+
+  //cabeceras adicionales
+  $cabeceras .= 'To: maxi.8379@gmail.com' . "\r\n";
+  //$cabeceras .= 'From: contacto@maxiibarra.com' . "\r\n";
+
+  //Enviarlo
+  //habilitar el mail si se sube a un servidor web
+  //mail($para,$titulo,$cuerpo, $cabeceras);
+  header("Location:confirmacion-envio.php");
+}
 ?>
 <!DOCTYPE html>
 <html lang="es" class="h-100">
@@ -37,7 +68,7 @@ $pg = "contacto";
               <input type="text" name="txtNombre" id="txtNombre" placeholder="Nombre" class="form-control shadow">
             </div>
             <div class="pb-3">
-              <input type="email" name="txtEmail" id="txtEmail" placeholder="Correo" class="form-control shadow">
+              <input type="email" name="txtCorreo" id="txtCorreo" placeholder="Correo" class="form-control shadow">
             </div>
             <div class="pb-3">
               <input type="tel" name="txtTelefono" id="txtTelefono" placeholder="Teléfono/whatsapp" class="form-control shadow">
@@ -53,23 +84,8 @@ $pg = "contacto";
       </div>
     </div>
   </main>
-  <footer class="container mt-auto py-4">
-    <div class="row">
-      <div class="col-12 col-sm-3">
-        <a href="https://github.com" target="_blank" title="Github"><i class="fab fa-github"></i></a>
-        <a href="https://www.linkedin.com/in/maximiliano-ibarra/" target="_blank" title="Github"><i class="fa-brands fa-linkedin-in"></i></a>
-      </div>
-      <div class="col-12 col-sm-3">
-        sponsor <a href="https://depcsuite.com" target="_blank">DePC Suite</a>
-      </div>
-      <div class="col-12 col-sm-3">
-        <a href="mailto:maxi.8379@gmail.com">maxi.8379@gmail.com</a>
-      </div>
-      <div class="col-12 col-sm-3">
-        <a href="https://api.whatsapp.com/send?phone=+541139476425" aria-placeholder="Enviame tu consulta por aqui!" target="_blank" title="whatsapp"><i class="fab fa-whatsapp px-3 pt-3 pb-4"></i></a>
-      </div>
-
-    </div>
+  <footer class="container mt-auto pb-sm-4">
+    <?php include_once("footer.php"); ?>
   </footer>
 </body>
 
