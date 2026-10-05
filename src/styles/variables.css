@@ -1,0 +1,39 @@
+:root {
+  /* Backgrounds */
+  --bg-primary: #090d14;
+  --bg-secondary: #0d131d;
+  --bg-surface: #121925;
+
+  /* Text */
+  --text-primary: #f4f6f8;
+  --text-secondary: #9ca8b8;
+  --text-muted: #6f7a89;
+
+  /* Accent */
+  --accent: #725cff;
+  --accent-light: #9282ff;
+  --accent-glow: rgba(114, 92, 255, 0.35);
+
+  /* Glass */
+  --glass-bg: rgba(14, 20, 31, 0.68);
+  --glass-border: rgba(255, 255, 255, 0.08);
+
+  /* Borders */
+  --border-soft: rgba(255, 255, 255, 0.08);
+
+  /* Layout */
+  --container-navbar: 2800px;
+  --container-hero: 2300px;
+
+  /* Radius */
+  --radius-sm: 10px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+
+  /* Transitions */
+  --transition-fast: 180ms ease;
+  --transition-normal: 300ms ease;
+
+  --font-display: 'Space Grotesk', sans-serif;
+  --font-body: 'Inter', sans-serif;
+}
