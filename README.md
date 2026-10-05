@@ -1,75 +1,62 @@
-# React + TypeScript + Vite
+# Portfolio · Maximiliano Ibarra
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Mi portfolio personal como desarrollador de software. Un espacio para mostrar mis proyectos, contar sobre mi formación y compartir las tecnologías con las que trabajo.
 
-Currently, two official plugins are available:
+[Ver portfolio](https://maxiibarra.vercel.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Tecnologías
 
-## React Compiler
+- **React** para construir la interfaz con componentes.
+- **TypeScript** para incorporar tipado al código.
+- **Vite** como herramienta de desarrollo y compilación.
+- **CSS Modules** para organizar los estilos de cada componente.
+- **Lucide React** para los íconos de la interfaz.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Qué incluye
 
-## Expanding the ESLint configuration
+- Presentación personal y sección sobre mí.
+- Tecnologías principales y proyectos destacados.
+- Contacto directo mediante WhatsApp y LinkedIn.
+- Diseño responsive para distintos tamaños de pantalla.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Ejecutar localmente
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Necesitás tener instalados **Node.js** y **npm**.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+Descargá o cloná el repositorio y abrí una terminal en la carpeta del proyecto.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+1. Instalá las dependencias:
 
+   ```bash
+   npm install
+   ```
+
+2. Iniciá el servidor de desarrollo:
+
+   ```bash
+   npm run dev
+   ```
+
+3. Abrí en el navegador la dirección que indique Vite en la terminal.
+
+## Compilación y vista previa
+
+Para generar la versión de producción:
+
+```bash
+npm run build
 ```
 
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
+Los archivos generados quedan en la carpeta `dist/`.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Para revisar esa versión localmente después de compilar:
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
+```bash
+npm run preview
 ```
+
+## Autor
+
+**Maximiliano Ibarra** — Desarrollador de software.
+
+[GitHub](https://github.com/maxibarra) · [Portfolio](https://maxiibarra.vercel.app/)
